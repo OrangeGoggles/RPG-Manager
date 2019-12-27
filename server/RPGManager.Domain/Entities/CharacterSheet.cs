@@ -12,6 +12,7 @@ namespace RPGManager.Domain.Entities
         public string Name { get; set; }
         public string Description { get; set; }
         public HealthPoints HealthPoints { get; set; }
+        public CharacterLevel Level { get; set; }
         
         public Guid UserId { get; set; }
         public int CharRaceId { get; set; }

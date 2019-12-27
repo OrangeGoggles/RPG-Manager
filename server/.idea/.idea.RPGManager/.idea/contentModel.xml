@@ -20,7 +20,7 @@
       <e p="5 - CrossCutting" t="Include" />
       <e p="6 - Tests" t="Include" />
       <e p="packages" t="ExcludeRecursive" />
-      <e p="RPGManager.API" t="IncludeRecursive">
+      <e p="RPGManager.API.Desk" t="IncludeRecursive">
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
@@ -30,7 +30,7 @@
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
-              <e p="RPGManager.API.AssemblyInfo.cs" t="Include" />
+              <e p="RPGManager.API.Desk.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
@@ -38,7 +38,7 @@
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
         </e>
-        <e p="RPGManager.API.csproj" t="IncludeRecursive" />
+        <e p="RPGManager.API.Desk.csproj" t="IncludeRecursive" />
         <e p="Startup.cs" t="Include" />
         <e p="WeatherForecast.cs" t="Include" />
       </e>
@@ -66,6 +66,10 @@
       </e>
       <e p="RPGManager.Domain" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="CommandHandlers" t="Include" />
+        <e p="Commands" t="Include">
+          <e p="ICommand.cs" t="Include" />
+        </e>
         <e p="Entities" t="Include">
           <e p="Campaign.cs" t="Include" />
           <e p="CharacterClass.cs" t="Include" />
@@ -87,14 +91,49 @@
         <e p="RPGManager.Domain.csproj" t="IncludeRecursive" />
         <e p="Services" t="Include" />
         <e p="ValueObjects" t="Include">
+          <e p="CharacterLevel.cs" t="Include" />
           <e p="HealthPoints.cs" t="Include" />
         </e>
       </e>
-      <e p="RPGManager.Repository.EF" t="IncludeRecursive">
+      <e p="RPGManager.Domain.Combat" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Commands" t="Include">
+          <e p="HealGameCharacterCommand.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp2.2" t="Include">
+              <e p="RPGManager.Domain.Combat.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="RPGManager.Domain.Combat.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="RPGManager.Domain.Desk" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Commands" t="Include">
+          <e p="AddNewDeskMemberCommand.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.2" t="Include">
+              <e p="RPGManager.Domain.Desk.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="RPGManager.Domain.Desk.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="RPGManager.Repository.EF" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Mappings" t="Include">
+          <e p="CharacterSheetMap.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.2" t="Include">
+              <e p="RPGManager.Repository.EF.AssemblyInfo.cs" t="Include" />
+            </e>
+            <e p="netcoreapp3.0" t="Include">
               <e p="RPGManager.Repository.EF.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
